@@ -18,7 +18,13 @@ if response.status_code == 200:
 else:
     print(f"Request failed with status code: {response.status_code}")
 ```
+Output:
+`{"employee_name":"peter.johnson","request_detail":"Shitty job, I hate working here, I will leak all important information like KashiCTF{s4m3_old_c0rp0_l1f3_5WjgcCa5}"`
 
+**Kết quả:**
+```
+KashiCTF{s4m3_old_c0rp0_l1f3_5WjgcCa5}
+```
 
 ## SuperFastAPI
 
@@ -87,7 +93,7 @@ else:
 
 ```
 
-Kết quả:
+**Kết quả**:
 ```
 KashiCTF{m455_4551gnm3n7_ftw_LBBJ23ZSV}
 ```
